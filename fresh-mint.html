@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMint Cafe 🍃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #A0E6C2, #80CBC4);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50, #2E8B57);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .menu-category {
+            padding: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .menu-category h2 {
+            color: #2E8B57;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateX(5px);
+            background: #f0f8f0;
+        }
+        
+        .item-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .item-info p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .item-price {
+            font-weight: bold;
+            color: #2E8B57;
+            font-size: 1.2em;
+        }
+        
+        .order-section {
+            padding: 30px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+        }
+        
+        .order-btn {
+            background: #FF6B6B;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .order-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,107,107,0.6);
+            background: #FF5252;
+        }
+        
+        .phone-number {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #333;
+        }
+        
+        .work-time {
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .special-note {
+            background: #FFF3CD;
+            border: 2px dashed #FFA500;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍃 FreshMint Cafe</h1>
+            <p>Свежий вкус и технологии в каждой чашке</p>
+        </div>
+        
+        <div class="menu-category">
+            <h2>🍣 Японская кухня</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Спановый сет</h3>
+                    <p>Ассорти из 6 авторских роллов с лососем, тунцом и авокадо</p>
+                </div>
+                <div class="item-price">690 ₽</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Филадельфия классик</h3>
+                    <p>Лосось, сливочный сыр, огурец, авокадо</p>
+                </div>
+                <div class="item-price">450 ₽</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Калифорния с крабом</h3>
+                    <p>Краб-микс, авокадо, огурец, икра масаго</p>
+                </div>
+                <div class="item-price">420 ₽</div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h2>☕ Напитки</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Мятный латте</h3>
+                    <p>Свежая мята, эспрессо, молочная пенка</p>
+                </div>
+                <div class="item-price">280 ₽</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Матча латте</h3>
+                    <p>Японский зелёный чай, молоко, ваниль</p>
+                </div>
+                <div class="item-price">320 ₽</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Фреш апельсин-мята</h3>
+                    <p>Свежевыжатый апельсин, листья мяты, лёд</p>
+                </div>
+                <div class="item-price">220 ₽</div>
+            </div>
+        </div>
+        
+        <div class="special-note">
+            <h3>🌽⚽ Специальное предложение!</h3>
+            <p>При заказе от 1500 ₽ — <strong>кукурузный шарик в подарок!</strong></p>
+            <p><em>(Для настоящих ценителей IT-юмора)</em></p>
+        </div>
+        
+        <div class="order-section">
+            <h2>🚀 Быстрый заказ</h2>
+            <p class="phone-number">📞 +7 996 676 18 71</p>
+            <p class="work-time">⏰ Ежедневно с 9:00 до 23:00</p>
+            
+            <button class="order-btn" onclick="callUs()">
+                📞 Позвонить для заказа
+            </button>
+            
+            <p style="margin-top: 15px; color: #666;">
+                Просто нажмите кнопку — телефон автоматически наберт наш номер!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function callUs() {
+            // Твой номер телефона
+            window.open('tel:+79966761871');
+        }
+        
+        // Добавляем анимацию при прокрутке
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.animation = 'pulse 0.5s ease';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
